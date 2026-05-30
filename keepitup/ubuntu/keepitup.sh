@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Requirements: sudo apt install xdotool
-LOGFILE="/home/vdi-test/workspace/keepalive.log"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+LOGFILE="$SCRIPT_DIR/../../keepalive.log"
 PIDFILE="/tmp/keeplive.pid"
 
 # Check if script is already running using PID file
